@@ -1,0 +1,5 @@
+Ejercicio 1 - Hola Mundo
+Ejercicio 2 - Tipos de datos
+Ejercicio 3 - Estructura de datos
+Ejercicio 4 - Condicional
+Ejercicio 5 - IF/ELSE tocho
