@@ -3,3 +3,6 @@ Ejercicio 2 - Tipos de datos
 Ejercicio 3 - Estructura de datos
 Ejercicio 4 - Condicional
 Ejercicio 5 - IF/ELSE tocho
+Ejercicio 6 - Switch/If/Else
+Ejercicio 7 - Bucle For
+Ejercicio 8- Bucle for example
