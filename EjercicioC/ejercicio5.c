@@ -1,43 +1,33 @@
-#include "stdio.h"
+
+   #include "stdio.h"
 /*
-1. Dolor de cabeza - Nada
-2.Dolor de fiebre + Fiebre -> Gripe
-3.Dolor de cabeza + Fiebre + Vienes de China -> Coronavirus
-4. Dolor de garganta + tos -> Resfriado común
+1. Dolor de cabeza -> Nada
+2. Dolor de cabeza + Fiebre -> Gripe
+3. Dolor de cabeza + Fiebre + Vienes de China -> Coronavirus
 */
 int main(int argc, char const *argv[])
 {
     int dolorDeCabeza, fiebre, origenChina;
-    printf("Te duele la cabeza? [0-si, 1-no]");
-    scanf("%id", &dolorDeCabeza);
-    if (dolorDeCabeza == 0)
-    {
-        printf("Tomate un paracetamol anda");
-    }
-    else
-    {
-        printf("Que haces aquí");
-    }
-    printf("Tienes fiebre? [0-si, 1-no]");
-    scanf("%id", &fiebre);
-    if (fiebre == 0)
-    {
-        printf("Hazte una bola en la cama y toma ibuprofeno");
-    }
-    else
-    {
-        printf("De nuevo, que haces aqui");
-    }
-    printf("Vienes de china? [0-si, 1-no]");
-    scanf("%id", &origenChina);
-
-    if (origenChina == 0)
-    {
-        printf("Bienvenido! Esto es Spain");
-    }
-    else
-    {
-        printf("Holi camarada");
-    }
+    printf("Te duele la cabeza? [0-No, 1-Si]");
+    scanf("%d",&dolorDeCabeza);
+    printf("Tiene fiebre? [0-No, 1-Si]");
+    scanf("%d",&fiebre);
+    printf("Vienes de China? [0-No, 1-Si]");
+    scanf("%d",&origenChina);
+    //Version Veronica
+    if (dolorDeCabeza==1) {
+        if (fiebre==1) {
+            if (origenChina==1){
+                prinf("Coronavirus");
+            } else {
+                prinf("Gripe");
+            }
+        } else {
+            prinf("No tienes nada");
+        }
+    } else {
+        printf("Estas fenomenal");
+    
+    
     return 0;
 }
