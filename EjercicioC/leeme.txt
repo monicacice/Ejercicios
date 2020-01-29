@@ -6,3 +6,9 @@ Ejercicio 5 - IF/ELSE tocho
 Ejercicio 6 - Switch/If/Else
 Ejercicio 7 - Bucle For
 Ejercicio 8- Bucle for example
+ejercicio 9 - While - Adivino
+Ejercicio10- Arrays - Vectores - Declaracion e inicio
+Ejercicio 11 - Vector recorrer estructura
+Ejercicio 12 - Arrays 2 dimensiones
+Ejercicio13-
+Ejercicio 14-
