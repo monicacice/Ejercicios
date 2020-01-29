@@ -4,33 +4,48 @@
 
 #define MAX 10
 #define NUMERO_INTENTOS 5
+#define PARTIDAS 3
 int getRandom();
 int main(int argc, char const *argv[])
-{   
-    //Obtener el numero aleatorio
+{
+    int numeroAleatorio;
+    int numero;
+    //Obtener el numero aleatorio. DOS == comparas. CON = estás asignando un valor.
+    for (int i = 0; i < PARTIDAS; i++)
+    {
+        numeroAleatorio = getRandom();
+        //printf("%d", numeroAleatorio);
 
-    int numeroAleatorio = getRandom();
-    int numeroAdivino;
-    for (int i=0; i <NUMERO_INTENTOS; i++)
-    {   printf("Introduce tu numero");
-        scanf("%d", &numeroAdivino);      
+        for (int i = 0; i < NUMERO_INTENTOS; i++) //1.Inicializacion. 2. Validacion. 3. Incremento(que quieras)
+        {
+            printf("Introduce tu numero: ");
+            scanf("%d", &numero);
+            if (numero == numeroAleatorio)
+            {
+                printf("TOMA TU MEDALLA\n");
+                break;
+            }
+            else
+            {
+                printf("Ups...\n");
+            }
+        }
+        if (numero == numeroAleatorio)
+        {
+            printf("VICTORIA :D\n");
+            break;
+        }
+        else
+        {
+            printf("GAME OVER D:\n");
+        }
     }
-    if (NUMERO_INTENTOS > 5)
-    printf("Se te han acabado tus intentos");
-    break;
-    
-   
-
-    
-
-
-    
 }
 
-
-int getRandom() {
+int getRandom()
+{
     int aleatorio;
-    srand (time(NULL));
+    srand(time(NULL));
     aleatorio = rand() % MAX;
-    return 5;
+    return aleatorio;
 }
