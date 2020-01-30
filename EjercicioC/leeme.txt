@@ -11,4 +11,4 @@ Ejercicio10- Arrays - Vectores - Declaracion e inicio
 Ejercicio 11 - Vector recorrer estructura
 Ejercicio 12 - Arrays 2 dimensiones
 Ejercicio13- Tres en raya
-Ejercicio 14-
+Ejercicio 14-Paso de parametros por valor
