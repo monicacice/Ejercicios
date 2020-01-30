@@ -35,9 +35,31 @@ void mostrarTablero()
             printf("%d", tablero[fila][col]);
         }
     }
+     int fila;
+     int col;
+     printf("\n Introduce una fila movimiento jugador 1 ");
+     scanf("%d", &fila);
+     printf("\n Introduce una columna jugador 1 ");
+     scanf("%d", &col);
+     tablero [fila][col]= 2;
+     
+     
+    
+     printf("\n Introduce una fila movimiento jugador 2 ");
+     scanf("%d", &fila);
+     printf("\n Introduce una columna jugador 2 ");
+     scanf("%d", &col);
+     tablero [fila][col]= 2;
+     mostrarTablero();
+
+    
+     /* tablero [fila][col]= 1;
+     mostrarTablero();*/
+
+
+
+
+
+
 }
 
-void jugar()
-{
-    
-}
