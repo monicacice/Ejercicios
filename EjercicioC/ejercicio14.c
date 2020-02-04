@@ -6,12 +6,14 @@ void funcion1(int a);
 void funcion2(int *a);
 int main(int argc, char const *argv[])
 {
+
     int a1 = 0;
     int a2 = 0;
     funcion1(a1);
     funcion2(&a2);
     display(a1);
     display(a2);
+    calcular();
     //Operacion
     int resul=0;
     int ok=calcular(1,8,&resul);
@@ -42,5 +44,7 @@ int calcular(int o1, int o2, int *resultado){
     if(o1==0|| o2==0){
         return -1;
     }
-    *resultado =o1+o2;
-}       return 0;
+    *resultado =o1+o2;{
+        return 0;
+    }
+}       
