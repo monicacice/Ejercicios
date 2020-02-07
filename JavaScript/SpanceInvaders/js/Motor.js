@@ -12,13 +12,15 @@ function inicializar() {
     ctx.fillStyle = "black";
     ctx.fillRect(0,0, c.width, c.height);
     //Instanciamos el alien
-    antonio = new Invasor("invasor.png", 0,0,50,50,5);
-    alberto = new Invasor("invasor.jpg", 55,0,50,50,7);
+    antonio = new Invasor("invasor.png", 0,0,80,80,10);
+    alberto = new Invasor("invasor.png", 55,0,80,80,10);
+    fernando = new Invasor("invasor.png",170,0,80,80,10);
+    monica= new Invasor("invasor.png", 255,0,80,80,10);
     
     //LLamada a jugar
     setInterval(function(){
         jugar();
-    },1000);
+    },100);
 
 
 
@@ -29,6 +31,9 @@ function inicializar() {
 
 function jugar() {
     console.log("Jugando...");
+    ctx.fillRect(0,0, c.width, c.height);
     antonio.mover();
     alberto.mover();
+    fernando.mover();
+    monica.mover();
 }
