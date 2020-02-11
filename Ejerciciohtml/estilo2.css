@@ -1,0 +1,10 @@
+#textNombre{
+    padding: 1em;
+    background-color:purple;
+    color: black;
+}
+#textNombre:hover /* cuando pasas el cursor por encima, se cambia de color y de todo*/
+{
+background-color: firebrick;
+color: white;
+}
