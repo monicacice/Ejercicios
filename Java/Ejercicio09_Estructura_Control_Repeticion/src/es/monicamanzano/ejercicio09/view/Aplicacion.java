@@ -34,6 +34,8 @@ public class Aplicacion extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jtaSalida = new javax.swing.JTextArea();
         jbFor = new javax.swing.JButton();
+        jbWhile = new javax.swing.JButton();
+        jbDoWhile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Estructura de control y repetición");
@@ -68,22 +70,41 @@ public class Aplicacion extends javax.swing.JFrame {
             }
         });
 
+        jbWhile.setText("Example while");
+        jbWhile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbWhileActionPerformed(evt);
+            }
+        });
+
+        jbDoWhile.setText("Example do while");
+        jbDoWhile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbDoWhileActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jtfEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jbCalcular)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jbFor)
-                .addContainerGap(126, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jbWhile)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jtfEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jbCalcular)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbFor)
+                    .addComponent(jbDoWhile))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,7 +114,11 @@ public class Aplicacion extends javax.swing.JFrame {
                     .addComponent(jtfEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbCalcular)
                     .addComponent(jbFor))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 174, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbWhile)
+                    .addComponent(jbDoWhile))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -120,6 +145,26 @@ public class Aplicacion extends javax.swing.JFrame {
             
         }
     }//GEN-LAST:event_jbForActionPerformed
+
+    private void jbWhileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbWhileActionPerformed
+        int i=0;
+        jtaSalida.setText("EJEMPLO WHILE\n");
+        while(i<10) {
+            jtaSalida.append("WHILE" + i + "\n");
+            i++;
+        }
+    }//GEN-LAST:event_jbWhileActionPerformed
+
+    private void jbDoWhileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDoWhileActionPerformed
+        int i=0;
+        jtaSalida.setText("EJEMPLO DO WHILE\n");
+        do {
+            jtaSalida.append("WHILE" + i + "\n");
+            i++;
+        } while (i <10);
+         
+        
+    }//GEN-LAST:event_jbDoWhileActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,7 +204,9 @@ public class Aplicacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton jbCalcular;
+    private javax.swing.JButton jbDoWhile;
     private javax.swing.JButton jbFor;
+    private javax.swing.JButton jbWhile;
     private javax.swing.JTextArea jtaSalida;
     private javax.swing.JTextField jtfEdad;
     // End of variables declaration//GEN-END:variables
